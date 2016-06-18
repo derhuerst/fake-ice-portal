@@ -37,7 +37,8 @@ const data = () => {
 
 
 const portal = http.createServer((req, res) => {
-	res.write(JSON.stringify(data()))
+	const body = Object.assign(data(), {line: cfg.line})
+	res.write(JSON.stringify(body))
 	res.end()
 })
 portal.listen(3000)

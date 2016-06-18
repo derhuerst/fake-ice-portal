@@ -4,5 +4,6 @@
 	"description": "Faking Inter City Express web portals.",
 	"main": "index.js",
 	"author": "Jannis R <mail@jannisr.de>",
-	"license": "ISC"
+	"license": "ISC",
+	"config": {"line": "ICE 123"}
 }
