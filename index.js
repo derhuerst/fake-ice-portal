@@ -32,7 +32,12 @@ const data = () => {
 		fraction * (track[next].latitude - track[last].latitude)
 	const longitude = track[last].longitude +
 		fraction * (track[next].longitude - track[last].longitude)
-	return noise({latitude, longitude})
+	const data = noise({latitude, longitude})
+
+	// check approximation
+	data.speed = Math.round(160 + (fraction * 100) % 10)
+
+	return data
 }
 
 
