@@ -1,6 +1,7 @@
 'use strict'
 
 const http = require('http')
+const cfg = require('./package.json').config
 
 
 
