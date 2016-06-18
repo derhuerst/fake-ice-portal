@@ -5,5 +5,11 @@
 	"main": "index.js",
 	"author": "Jannis R <mail@jannisr.de>",
 	"license": "ISC",
-	"config": {"line": "ICE 123"}
+	"config": {"line": "ICE 123"},
+	"scripts": {
+		"start": "forever start -a --uid fake-ice-portal index.js",
+		"stop":  "forever stop fake-ice-portal",
+		"autostart-on":  "autostart enable -n fake-ice-portal -p $PWD -c 'npm start'",
+		"autostart-off": "autostart disable -n fake-ice-portal"
+	}
 }
