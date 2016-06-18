@@ -1,0 +1,8 @@
+{
+	"name": "fake-ice-portal",
+	"version": "1.0.0",
+	"description": "Faking Inter City Express web portals.",
+	"main": "index.js",
+	"author": "Jannis R <mail@jannisr.de>",
+	"license": "ISC"
+}
