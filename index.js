@@ -29,7 +29,7 @@ const data = () => {
 	// cheap approximation, proper GPS-based calculation would be nice here
 	const latitude = track[last].latitude +
 		fraction * (track[next].latitude - track[last].latitude)
-	const longitude = track[last].latitude +
+	const longitude = track[last].longitude +
 		fraction * (track[next].longitude - track[last].longitude)
 	return noise({latitude, longitude})
 }
